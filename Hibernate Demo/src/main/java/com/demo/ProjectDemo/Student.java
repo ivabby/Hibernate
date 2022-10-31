@@ -1,5 +1,6 @@
 package com.demo.ProjectDemo;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -9,6 +10,9 @@ public class Student {
     private int id;
     private String name;
     private String city;
+
+    @Embedded
+    private Certificate certificate;
 
     public Student(int id, String name, String city) {
         this.id = id;
@@ -43,12 +47,21 @@ public class Student {
         this.city = city;
     }
 
+    public Certificate getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(Certificate certificate) {
+        this.certificate = certificate;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", city='" + city + '\'' +
+                ", certificate=" + certificate +
                 '}';
     }
 }

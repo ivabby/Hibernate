@@ -49,6 +49,9 @@ public class App {
         // Closing the session
         session.close();
 
+        // Closing session factory
+        factory.close();
+
         System.out.println("Done");
     }
 }
