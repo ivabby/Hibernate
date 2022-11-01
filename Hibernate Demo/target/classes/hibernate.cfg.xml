@@ -11,16 +11,18 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
         <property name="connection.username">root</property>
         <property name="connection.password">password</property>
-        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL55Dialect</property>
         <property name="hbm2ddl.auto">create</property>
         <!--        <property name="hbm2ddl.auto">update</property>-->
         <!-- Create only when table is not present -->
         <property name="show_sql">true</property>
         <mapping class="com.demo.ProjectDemo.Student"/>
         <mapping class="com.demo.ProjectDemo.Address"/>
-<!--        <mapping class="com.mapping.oneToOne.Question" />-->
+        <!--        <mapping class="com.mapping.oneToOne.Question" />-->
         <!--        <mapping class="com.mapping.oneToOne.Answer" />-->
-        <mapping class="com.mapping.oneToMany.Question" />
-        <mapping class="com.mapping.oneToMany.Answer" />
+        <mapping class="com.mapping.oneToMany.Question"/>
+        <mapping class="com.mapping.oneToMany.Answer"/>
+        <mapping class="com.mapping.manyToMany.Employee"/>
+        <mapping class="com.mapping.manyToMany.Project"/>
     </session-factory>
 </hibernate-configuration>
