@@ -18,5 +18,9 @@
         <property name="show_sql">true</property>
         <mapping class="com.demo.ProjectDemo.Student"/>
         <mapping class="com.demo.ProjectDemo.Address"/>
+<!--        <mapping class="com.mapping.oneToOne.Question" />-->
+        <!--        <mapping class="com.mapping.oneToOne.Answer" />-->
+        <mapping class="com.mapping.oneToMany.Question" />
+        <mapping class="com.mapping.oneToMany.Answer" />
     </session-factory>
 </hibernate-configuration>

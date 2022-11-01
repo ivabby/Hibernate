@@ -6,7 +6,7 @@ import javax.persistence.Id;
 
 @Entity // -> Marking class as entity
 public class Student {
-    @Id // -> This define primary id
+    @Id // -> This defines primary id
     private int id;
     private String name;
     private String city;
