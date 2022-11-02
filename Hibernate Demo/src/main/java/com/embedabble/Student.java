@@ -1,4 +1,4 @@
-package com.demo.ProjectDemo;
+package com.embedabble;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;

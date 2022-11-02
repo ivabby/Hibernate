@@ -1,4 +1,4 @@
-package com.demo.ProjectDemo;
+package com.embedabble;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

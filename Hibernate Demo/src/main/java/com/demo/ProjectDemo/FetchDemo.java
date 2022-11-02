@@ -1,5 +1,6 @@
 package com.demo.ProjectDemo;
 
+import com.embedabble.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
