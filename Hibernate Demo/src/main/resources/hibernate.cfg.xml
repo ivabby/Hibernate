@@ -22,11 +22,11 @@
         <mapping class="com.demo.ProjectDemo.Address"/>
         <!--        <mapping class="com.mapping.oneToOne.Question" />-->
         <!--        <mapping class="com.mapping.oneToOne.Answer" />-->
-<!--        <mapping class="com.mapping.oneToMany.Question"/>-->
-        <!--        <mapping class="com.mapping.oneToMany.Answer"/>-->
+        <mapping class="com.mapping.oneToMany.Question"/>
+        <mapping class="com.mapping.oneToMany.Answer"/>
         <mapping class="com.mapping.manyToMany.Employee"/>
         <mapping class="com.mapping.manyToMany.Project"/>
-        <mapping class="com.fetch.Answer" />
-        <mapping class="com.fetch.Question" />
+<!--        <mapping class="com.fetch.Answer" />-->
+<!--        <mapping class="com.fetch.Question" />-->
     </session-factory>
 </hibernate-configuration>

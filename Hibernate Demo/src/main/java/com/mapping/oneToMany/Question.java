@@ -11,7 +11,9 @@ public class Question {
     private int questionId;
     private String question;
 
-    @OneToMany(mappedBy = "question")
+    //  For Cascading we will add another field i.e. cascading
+    @OneToMany(mappedBy = "question" , cascade = CascadeType.ALL)
+    // @OneToMany(mappedBy = "question")
     private List<Answer> answer;
 
     public Question() {
