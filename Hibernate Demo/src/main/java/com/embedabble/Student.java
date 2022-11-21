@@ -1,10 +1,14 @@
 package com.embedabble;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity // -> Marking class as entity
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class Student {
     @Id // -> This defines primary id
     private int id;
