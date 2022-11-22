@@ -30,5 +30,7 @@
         <mapping class="com.mapping.manyToMany.Project"/>
 <!--        <mapping class="com.fetch.Answer" />-->
 <!--        <mapping class="com.fetch.Question" />-->
+
+        <mapping resource="Person.hbm.xml" />
     </session-factory>
 </hibernate-configuration>
